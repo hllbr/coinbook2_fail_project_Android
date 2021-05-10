@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/addIconView"
+        android:layout_width="215dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="addIcon"
+        app:layout_constraintBottom_toTopOf="@+id/conText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:onClick="save"
+        android:text="SAVE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orText" />
+
+    <EditText
+        android:id="@+id/ceoText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ceo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/yearText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/conText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yearText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Year"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/projectText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/capnoText"
+        app:layout_constraintTop_toBottomOf="@+id/ceoText" />
+
+    <EditText
+        android:id="@+id/orText"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="+ or -"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectText" />
+
+    <EditText
+        android:id="@+id/projectText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="179dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="projects"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearText" />
+
+    <EditText
+        android:id="@+id/conText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="coin Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/capnoText"
+        app:layout_constraintEnd_toStartOf="@+id/ceoText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addIconView" />
+
+    <EditText
+        android:id="@+id/capnoText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Cap No"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/projectText"
+        app:layout_constraintEnd_toStartOf="@+id/yearText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
